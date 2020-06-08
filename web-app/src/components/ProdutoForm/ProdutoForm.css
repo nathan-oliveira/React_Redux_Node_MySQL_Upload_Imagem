@@ -1,0 +1,72 @@
+.input-control {
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #f1f1f1;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 14px !important;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.wrapper {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 25px 30px 20px 30px;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.group-control p {
+  margin-bottom: -2% !important;
+  padding: 0 2px;
+  color: #555555;
+}
+
+input[type="file"] {
+  height: 41px;
+}
+
+.button-blue, .button-submit, .button-back, .button-delete{
+  color: #fff !important;
+  border: none;
+  padding: 6px 20px;
+  font-family: Poppins;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  -ms-box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.button-delete {
+  background: #ee3333 !important;
+}
+
+.button-back {
+  background: #6dabe4 !important;
+  margin-top: 14px;
+  float: left;
+}
+
+
+.button-submit {
+  background: #57b846 !important;
+  margin-top: 14px;
+  float: right;
+}
+
+.button-blue {
+  background: #3392e0 !important;
+  margin-bottom: 14px;
+  float: left;
+}
