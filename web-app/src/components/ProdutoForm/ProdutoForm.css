@@ -58,7 +58,6 @@ input[type="file"] {
   float: left;
 }
 
-
 .button-submit {
   background: #57b846 !important;
   margin-top: 14px;
@@ -69,4 +68,15 @@ input[type="file"] {
   background: #3392e0 !important;
   margin-bottom: 14px;
   float: left;
+}
+
+.img-view {
+  border: 1.4px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.img-view:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }

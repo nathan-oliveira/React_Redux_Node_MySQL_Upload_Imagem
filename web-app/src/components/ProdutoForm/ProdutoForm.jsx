@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import './ProdutoForm.css'
 
@@ -10,6 +11,8 @@ class ProdutoForm extends Component {
     super(props)
 
     this.state = { id: '', titulo: '', imagem: null }
+
+    this.onImageChange = this.onImageChange.bind(this)
   }
 
   changeValues = (e) => {
@@ -25,18 +28,14 @@ class ProdutoForm extends Component {
   onImageChange = e => {
     var reader = new FileReader()
     var file = e.target.files[0]
-    let base64 = null
+    let ref = this
 
     reader.onload = function(upload) {
-      base64 = upload.target.result
+      ref.setState({
+        imagem: upload.target.result
+      })
     }
     reader.readAsDataURL(file)
-
-    setTimeout(() => {
-      this.setState({
-        imagem: base64
-      })
-    }, 200);
   }
 
   render() {
@@ -61,11 +60,19 @@ class ProdutoForm extends Component {
                   <input className="input-control" type="file" name="imagem" id="imagem" placeholder="Imagem" onChange={(e) => this.onImageChange(e)} />
                 </div>
               </div>
+              <div className="cols-12 text-center">
+                {this.state.imagem &&
+                  <fieldset>
+                    <legend>Preview Image</legend>
+                    <img className="img-view" src={this.state.imagem} alt="Imagem do produto"/>
+                  </fieldset>
+                }
+              </div>
             </div>
             <div className="group-control form-button">
               <div className="row">
                 <div className="cols-12">
-                  <a href="/" type="submit" className="button-back">Voltar</a>
+                  <Link to="/" className="button-back">Voltar</Link>
                   <input type="submit" className="button-submit" value="Salvar" />
                 </div>
               </div>
