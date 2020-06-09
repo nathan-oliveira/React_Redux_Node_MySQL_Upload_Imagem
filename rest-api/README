@@ -1,3 +1,0 @@
-npm init
-
-npm install body-parser cors express mysql consign dotenv uuid
