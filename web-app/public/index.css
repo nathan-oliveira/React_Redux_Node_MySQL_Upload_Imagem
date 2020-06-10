@@ -1,0 +1,5 @@
+@media (max-width: 720px) {
+  .column2, .column3, .column4{
+    display: none;
+  }
+}
